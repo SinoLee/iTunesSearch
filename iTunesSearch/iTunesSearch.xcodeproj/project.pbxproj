@@ -16,6 +16,8 @@
 		84EB687C2383086F000FC959 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EB687A2383086F000FC959 /* LaunchScreen.storyboard */; };
 		84EB688523830888000FC959 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 84EB688423830888000FC959 /* RxSwift */; };
 		84EB688723830888000FC959 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 84EB688623830888000FC959 /* RxCocoa */; };
+		84EB688E2384586D000FC959 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 84EB688C2384586C000FC959 /* LICENSE */; };
+		84EB688F2384586D000FC959 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 84EB688D2384586C000FC959 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		84EB68782383086F000FC959 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84EB687B2383086F000FC959 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84EB687D2383086F000FC959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EB688C2384586C000FC959 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		84EB688D2384586C000FC959 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 		84EB68602383086E000FC959 = {
 			isa = PBXGroup;
 			children = (
+				84EB688C2384586C000FC959 /* LICENSE */,
+				84EB688D2384586C000FC959 /* README.md */,
 				84EB686B2383086E000FC959 /* iTunesSearch */,
 				84EB686A2383086E000FC959 /* Products */,
 			);
@@ -62,16 +68,48 @@
 		84EB686B2383086E000FC959 /* iTunesSearch */ = {
 			isa = PBXGroup;
 			children = (
-				84EB686C2383086E000FC959 /* AppDelegate.swift */,
-				84EB686E2383086F000FC959 /* SceneDelegate.swift */,
-				84EB68702383086F000FC959 /* ViewController.swift */,
+				84EB688B23845771000FC959 /* App */,
+				84EB688A2384576A000FC959 /* Models */,
+				84EB688923845758000FC959 /* Classes */,
+				84EB68882384574B000FC959 /* Resources */,
+				84EB68752383086F000FC959 /* iTunesSearch.xcdatamodeld */,
+			);
+			path = iTunesSearch;
+			sourceTree = "<group>";
+		};
+		84EB68882384574B000FC959 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				84EB68722383086F000FC959 /* Main.storyboard */,
 				84EB68782383086F000FC959 /* Assets.xcassets */,
 				84EB687A2383086F000FC959 /* LaunchScreen.storyboard */,
 				84EB687D2383086F000FC959 /* Info.plist */,
-				84EB68752383086F000FC959 /* iTunesSearch.xcdatamodeld */,
 			);
-			path = iTunesSearch;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		84EB688923845758000FC959 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				84EB68702383086F000FC959 /* ViewController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		84EB688A2384576A000FC959 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84EB688B23845771000FC959 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				84EB686C2383086E000FC959 /* AppDelegate.swift */,
+				84EB686E2383086F000FC959 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +179,8 @@
 			files = (
 				84EB687C2383086F000FC959 /* LaunchScreen.storyboard in Resources */,
 				84EB68792383086F000FC959 /* Assets.xcassets in Resources */,
+				84EB688F2384586D000FC959 /* README.md in Resources */,
+				84EB688E2384586D000FC959 /* LICENSE in Resources */,
 				84EB68742383086F000FC959 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,7 +340,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = iTunesSearch/Info.plist;
+				INFOPLIST_FILE = iTunesSearch/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,7 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = iTunesSearch/Info.plist;
+				INFOPLIST_FILE = iTunesSearch/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
